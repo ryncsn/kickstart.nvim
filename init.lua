@@ -516,6 +516,26 @@ require('lazy').setup({
       ---@type table<string, vim.lsp.Config>
       local servers = {
         clangd = {},
+        harper_ls = {
+          settings = {
+            ['harper-ls'] = {
+              userDictPath = '',
+              fileDictPath = '',
+              linters = {
+                SpellCheck = true,
+                SpelledNumbers = false,
+                LongSentences = false,
+                RepeatedWords = true,
+                Spaces = false,
+              },
+              markdown = {
+                IgnoreLinkTitle = false,
+              },
+              diagnosticSeverity = 'information',
+              dialect = 'American',
+            },
+          },
+        },
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
