@@ -504,7 +504,9 @@ require('lazy').setup({
       --  See `:help lsp-config` for information about keys and how to configure
       ---@type table<string, vim.lsp.Config>
       local servers = {
-        clangd = {},
+        clangd = {
+          cmd = { 'clangd', '--header-insertion=never' },
+        },
         harper_ls = {
           settings = {
             ['harper-ls'] = {
