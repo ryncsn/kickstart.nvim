@@ -743,16 +743,9 @@ require('lazy').setup({
     },
   },
   { -- PLUGIN: Colorscheme.
-    'WTFox/jellybeans.nvim',
+    'nanotech/jellybeans.vim',
     lazy = false,
     priority = 1000,
-    opts = {
-      on_colors = function(c)
-        local light_bg = '#ffffff'
-        local dark_bg = '#000000'
-        c.background = vim.o.background == 'light' and light_bg or dark_bg
-      end,
-    },
     config = function()
       vim.cmd.colorscheme 'jellybeans'
     end,
