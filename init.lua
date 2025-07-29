@@ -9,6 +9,10 @@ vim.g.maplocalleader = ' '
 -- Always use Nerd Font
 vim.g.have_nerd_font = true
 
+-- Force use true colors, we may lose some rainbow indent or label colors
+-- but jellybeans should always work.
+vim.o.termguicolors = true
+
 -- [[ Setting options ]]
 -- See `:help vim.o`
 --  For more options, you can see `:help option-list`
