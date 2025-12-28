@@ -562,6 +562,9 @@ require('lazy').setup({
         clangd = {
           cmd = { 'clangd', '--header-insertion=never' },
         },
+        bashls = {
+          filetypes = { 'bash', 'sh' },
+        },
         harper_ls = {
           settings = {
             ['harper-ls'] = {
