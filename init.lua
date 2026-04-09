@@ -5,6 +5,7 @@
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.opt.tags = vim.opt.tags + { '/tags;' }
 
 -- Always use Nerd Font
 vim.g.have_nerd_font = true
@@ -39,6 +40,9 @@ vim.o.showmode = false
 
 -- Enable break indent
 vim.o.breakindent = true
+
+-- Better C indention
+vim.o.smartindent = true
 
 -- Enable undo/redo changes even after closing and reopening a file
 vim.o.undofile = true
