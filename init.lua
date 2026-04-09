@@ -741,7 +741,11 @@ require('lazy').setup({
       },
 
       sources = {
-        default = { 'lsp', 'path', 'snippets' },
+        default = { 'lsp', 'path', 'snippets', 'buffer' },
+        providers = {
+          lsp = { min_keyword_length = 0, score_offset = 0 },
+          snippets = { min_keyword_length = 1, score_offset = 50 },
+        },
       },
 
       snippets = { preset = 'luasnip' },
